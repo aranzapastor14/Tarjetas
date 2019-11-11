@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>tarjetas</title>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html{
+                min-height: 100%;
+            }
+            img{
+                width: 100%
+            }
+            body{
+                font-family: "Georgia" cursive;
+                font-size: 16px;
+                background: linear-gradient(38deg,blue,pink);
+                color: purple;
+            }
+            .container{
+                display: flex;
+                flex-direction: row;
+                padding: 2em 4em;
+                justify-content: center;
+            }
+            .disenyador{
+                display: flex;
+                flex-direction: column;
+                width: 20em;
+                margin: 1em;
+                background: rgba(240,240,240,0.9);
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px purple;
+            }
+            .disenyador_img{
+                border-radius: 10px 10px 0 0;
+                overflow: hidden;
+                width: 100%;
+                height: 200px;
+                background: purple;
+            }
+            .disenyador_img img{
+                border-radius: 10px 10px 0 0;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+                filter: grayscale(100%);
+                mix-blend-mode: hard-light;
+            }
+            header{
+                display: flex;
+                margin: 0.5em 1em;
+                justify-content: space-between;
+                border-bottom: 1px solid purple;
+                align-items: baseline;
+            }
+            h3{
+                font-style: italic;
+                font-weight: bold;
+            }
+            span{
+                font-style: normal;
+                font-weight: lighter;
+                font-size: 0.7em;
+            }
+            .disenyador_contenido{
+                flex-grow: 1;
+                margin: 0.5em 1em;
+                font-size: 0.8em;
+                line-height: 1.4em;
+                text-align: justify;
+                hyphens: auto;
+            }
+            footer{
+                background: purple;
+                color: white;
+                font-size: 0.7em;
+                font-style: italic;
+                border-radius: 0 0 10px 10px;
+                padding: 0.6em;
+            }
+            @media (max-width:600px){
+                body{
+                    font-size: 12px;
+                }
+                .container{
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="disenyador">
+               <div class="disenyador_img">
+                  <img src="img/carson.jpg" alt="David Carson">
+              </div>
+              <header>
+                  <h3>David Carson</h3>
+                  <span>1955</span>
+              </header> 
+              <p class="disenyador_contenido"> 
+              David Carson es un diseñador gráfico, director de arte y surfista estadounidense . Es mejor conocido por su innovador diseño de revista y el uso de la tipografía experimental. Fue el director de arte de la revista Ray Gun , en la que empleó gran parte del enfoque tipográfico y de diseño por el que es conocido. En particular, su estética ampliamente imitada definió la llamada era de la "tipografía grunge". 
+              </p> 
+              <footer class="disenyador_pie">
+               David Carson ha ganado más de 230 premios por su trabajo en diseño gráfico, fotografía, publicidad y branding.   
+              </footer>
+              </div>
+              <div class="disenyador">
+                 <div class="disenyador_img">
+                    <img src="img/rand.jpg" 
+                    alt="Paul Rand">
+                 </div>
+                  <header>
+                      <h3>Paul Rand</h3>
+                      <span>1914</span>
+                  </header>
+                  <p class="disenyador_contenido">
+                 Paul Rand fue un diseñador gráfico estadounidense muy reconocido1​ en gran parte por el diseño de marcas institucionales. 
+                 Su educación incluye el Pratt Institute (1929-1932), el Parsons School of Design (1932-1933) y la Liga de estudiantes de arte de Nueva York (1933-1934). Fue uno de los originadores del estilo tipográfico internacional suizo.
+                 </p>
+                  <footer class="disenyador_pie">
+                  «Rand siempre pensó que era necesario captar a la audiencia con el mensaje y conseguir que hiciera el esfuerzo de interpretarlo.»
+                  </footer>
+              </div>
+            </div>
+    </body>
+</html>
